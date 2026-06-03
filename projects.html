@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Projects | Krolow</title>
+
+<meta name="description" content="Projects, games, telecommunications initiatives and software experiments by Krolow.">
+
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:
+        radial-gradient(circle at top, rgba(255,215,0,0.08), transparent 25%),
+        linear-gradient(180deg,#050505,#0a0a0a);
+    color:white;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+
+    padding:22px;
+
+    background:rgba(0,0,0,0.75);
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,215,0,0.12);
+
+    z-index:999;
+}
+
+.navbar a{
+    color:#d8d8d8;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:gold;
+}
+
+.hero{
+    padding:160px 20px 80px;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:4rem;
+    color:gold;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:850px;
+    margin:auto;
+    color:#cfcfcf;
+    line-height:1.8;
+}
+
+.section{
+    padding:80px 10%;
+}
+
+.category{
+    margin-bottom:80px;
+}
+
+.category h2{
+    color:gold;
+    margin-bottom:35px;
+    font-size:2.3rem;
+}
+
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:#111;
+    border:1px solid rgba(255,215,0,0.08);
+    border-radius:18px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+
+    border-color:rgba(255,215,0,0.35);
+
+    box-shadow:
+        0 0 35px rgba(255,215,0,0.08);
+}
+
+.card-image{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:30px;
+}
+
+.card h3{
+    color:gold;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cfcfcf;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.button{
+    display:inline-block;
+
+    padding:12px 22px;
+
+    background:
+        linear-gradient(180deg,#f3d96b,#b58a16);
+
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+
+    border-radius:10px;
+
+    transition:0.3s;
+}
+
+.button:hover{
+    transform:translateY(-2px);
+}
+
+.footer{
+    padding:50px;
+    text-align:center;
+    border-top:1px solid rgba(255,255,255,0.08);
+    color:#888;
+}
+
+@media(max-width:900px){
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .section{
+        padding:70px 8%;
+    }
+
+    .navbar{
+        gap:20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a href="projects.html">Projects</a>
+
+    <a href="portalnet.html">PortalNet</a>
+
+    <a href="about.html">About</a>
+
+</header>
+
+<section class="hero">
+
+    <h1>Projects</h1>
+
+    <p>
+        A collection of games, software experiments,
+        telecommunications initiatives and technical projects.
+        Some are active, some are experimental,
+        and some exist simply because they seemed interesting to build.
+    </p>
+
+</section>
+
+<section class="section">
+
+    <div class="category">
+
+        <h2>Games</h2>
+
+        <div class="projects-grid">
+
+            <div class="card">
+
+                <img src="images/gametouhou.png"
+                     class="card-image"
+                     alt="Eleytherias">
+
+                <div class="card-content">
+
+                    <h3>Eleytherias</h3>
+
+                    <p>
+                        A bullet hell shooter inspired by the Touhou series.
+                        Focused on fast gameplay, projectile patterns
+                        and classic shoot'em up design.
+                    </p>
+
+                    <a class="button"
+                       href="https://github.com/kroujiro/eleytherias"
+                       target="_blank">
+                        Repository
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <img src="images/ranco.png"
+                     class="card-image"
+                     alt="Ranço RPG">
+
+                <div class="card-content">
+
+                    <h3>Ranço RPG</h3>
+
+                    <p>
+                        An RPG project inspired by the Rance franchise.
+                        Experimental, somewhat chaotic,
+                        and an important learning experience.
+                    </p>
+
+                    <a class="button"
+                       href="https://github.com/kroujiro/ranco_br"
+                       target="_blank">
+                        Repository
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="category">
+
+        <h2>Telecommunications & Streaming</h2>
+
+        <div class="projects-grid">
+
+            <div class="card">
+
+                <img src="images/logo-unifit.png"
+                     class="card-image"
+                     alt="PortalNet">
+
+                <div class="card-content">
+
+                    <h3>PortalNet Test Environment</h3>
+
+                    <p>
+                        Repository used for IPTV, HLS and M3U8 testing,
+                        web experiments and content sharing.
+                        Also serves as a sandbox environment
+                        for various streaming-related projects.
+                    </p>
+
+                    <a class="button"
+                       href="https://github.com/kroujiro/test"
+                       target="_blank">
+                        Repository
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="category">
+
+        <h2>Other Projects</h2>
+
+        <div class="projects-grid">
+
+            <div class="card">
+
+                <div class="card-content">
+
+                    <h3>Brigada Paulista</h3>
+
+                    <p>
+                        Historical and strategy-oriented project
+                        focused on alternative scenarios,
+                        worldbuilding and related concepts.
+                    </p>
+
+                    <a class="button"
+                       href="https://github.com/kroujiro/brigadapaulista"
+                       target="_blank">
+                        Repository
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="card">
+
+                <div class="card-content">
+
+                    <h3>Kroujiro</h3>
+
+                    <p>
+                        General-purpose repository containing
+                        experiments, code snippets,
+                        prototypes and miscellaneous development work.
+                    </p>
+
+                    <a class="button"
+                       href="https://github.com/kroujiro/kroujiro"
+                       target="_blank">
+                        Repository
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+
+    © 2026 Krolow
+
+</footer>
+
+</body>
+</html>
