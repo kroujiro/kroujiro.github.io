@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PortalNet Telecom</title>
+
+<meta name="description"
+content="PortalNet Telecom - Conectando pessoas e empresas através de soluções modernas de telecomunicações.">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#050505;
+    color:white;
+}
+
+.navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+
+    padding:22px;
+
+    background:rgba(0,0,0,0.85);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+
+    z-index:999;
+}
+
+.navbar a{
+    color:#d8d8d8;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.navbar a:hover{
+    color:#4da3ff;
+}
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:120px 10%;
+
+    background:
+        radial-gradient(circle at center,
+        rgba(0,120,255,0.15),
+        transparent 45%);
+}
+
+.hero-content{
+
+    display:flex;
+    align-items:center;
+    gap:60px;
+
+    max-width:1300px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+
+    font-size:4rem;
+    margin-bottom:20px;
+
+    color:#4da3ff;
+}
+
+.hero-text p{
+
+    font-size:1.2rem;
+    line-height:1.8;
+
+    color:#d0d0d0;
+}
+
+.hero-image{
+
+    width:320px;
+    max-width:100%;
+}
+
+.hero-image img{
+    width:100%;
+}
+
+.section{
+    padding:100px 12%;
+}
+
+.section h2{
+
+    font-size:2.5rem;
+    color:#4da3ff;
+
+    margin-bottom:30px;
+}
+
+.section p{
+
+    line-height:1.8;
+    color:#d0d0d0;
+}
+
+.cards{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+
+    margin-top:40px;
+}
+
+.card{
+
+    background:#111;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,0.06);
+}
+
+.card h3{
+    color:#4da3ff;
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#cfcfcf;
+}
+
+.group{
+
+    background:#0b0b0b;
+    text-align:center;
+}
+
+.group-logo{
+
+    width:220px;
+    margin:30px auto;
+    display:block;
+}
+
+.button{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 30px;
+
+    background:#4da3ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:10px;
+
+    font-weight:bold;
+}
+
+.button:hover{
+    opacity:0.9;
+}
+
+.footer{
+
+    padding:50px;
+
+    text-align:center;
+
+    border-top:1px solid rgba(255,255,255,0.08);
+
+    color:#777;
+}
+
+@media(max-width:900px){
+
+    .hero-content{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .hero-text h1{
+        font-size:2.8rem;
+    }
+
+    .section{
+        padding:80px 8%;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <a href="index.html">Home</a>
+
+    <a href="projects.html">Projetos</a>
+
+    <a href="portalnet.html">PortalNet</a>
+
+    <a href="about.html">Sobre</a>
+
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-text">
+
+            <h1>PortalNet Telecom</h1>
+
+            <p>
+
+                Conectando pessoas, empresas e oportunidades através de soluções modernas de telecomunicações.
+
+                A PortalNet Telecom integra o Grupo Unifit Telecomunicações e atua oferecendo internet residencial, comercial, rural e soluções corporativas de conectividade.
+
+            </p>
+
+            <a
+            class="button"
+            href="https://www.grupounifit.com.br"
+            target="_blank">
+
+                Conheça o Grupo Unifit
+
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="images/portalnet.png" alt="PortalNet Telecom">
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <h2>Nossa Visão</h2>
+
+    <p>
+
+        Em um mundo cada vez mais conectado, acreditamos que infraestrutura de telecomunicações é mais do que tecnologia: é um fator essencial para crescimento econômico, inovação e desenvolvimento social.
+
+        A PortalNet busca entregar conectividade de alta qualidade para residências, empresas e organizações que dependem de uma internet rápida, estável e confiável.
+
+    </p>
+
+</section>
+
+<section class="section">
+
+    <h2>Diferenciais</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Fibra Óptica</h3>
+
+            <p>
+                Infraestrutura moderna para máxima velocidade e estabilidade.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Suporte Especializado</h3>
+
+            <p>
+                Atendimento ágil e focado na resolução eficiente de problemas.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Conectividade Corporativa</h3>
+
+            <p>
+                Soluções para empresas que exigem disponibilidade e desempenho.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Expansão Contínua</h3>
+
+            <p>
+                Investimentos constantes em infraestrutura e cobertura.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="section group">
+
+    <img
+    src="images/unifit-logo.png"
+    class="group-logo"
+    alt="Grupo Unifit">
+
+    <h2>Grupo Unifit Telecomunicações</h2>
+
+    <p>
+
+        A PortalNet Telecom faz parte do Grupo Unifit Telecomunicações, juntamente com outras empresas do setor de conectividade e tecnologia.
+
+        O grupo atua com foco em inovação, excelência operacional e desenvolvimento de soluções capazes de atender tanto clientes residenciais quanto o mercado corporativo. :contentReference[oaicite:1]{index=1}
+
+    </p>
+
+    <a
+    class="button"
+    href="https://www.grupounifit.com.br"
+    target="_blank">
+
+        Visitar Site Institucional
+
+    </a>
+
+</section>
+
+<footer class="footer">
+
+    © 2026 PortalNet Telecom • Grupo Unifit Telecomunicações
+
+</footer>
+
+</body>
+</html>
